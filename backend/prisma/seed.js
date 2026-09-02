@@ -199,7 +199,19 @@ async function main() {
         },
       });
     } else {
-      customer = existing;
+      customer = await prisma.customer.update({
+        where: { id: existing.id },
+        data: {
+          name: c.name,
+          email: c.email,
+          businessName: c.businessName,
+          gstNumber: c.gstNumber,
+          type: c.type,
+          address: c.address,
+          status: c.status,
+          notes: c.notes,
+        },
+      });
     }
     createdCustomers.push(customer);
   }
@@ -211,7 +223,25 @@ async function main() {
     where: { challanNumber: sampleChallanNumber },
   });
 
-  if (!existingChallan && createdCustomers.length > 0 && createdProducts.length >= 2) {
+  if (existingChallan && createdCustomers.length > 0) {
+    const targetCustomer = createdCustomers[0];
+    await prisma.salesChallan.update({
+      where: { challanNumber: sampleChallanNumber },
+      data: {
+        customerSnapshot: {
+          id: targetCustomer.id,
+          name: targetCustomer.name,
+          businessName: targetCustomer.businessName,
+          mobile: targetCustomer.mobile,
+          email: targetCustomer.email,
+          gstNumber: targetCustomer.gstNumber,
+          type: targetCustomer.type,
+          address: targetCustomer.address,
+        },
+      },
+    });
+    console.log(`📄 Sample Challan '${sampleChallanNumber}' customer snapshot updated`);
+  } else if (!existingChallan && createdCustomers.length > 0 && createdProducts.length >= 2) {
     const targetCustomer = createdCustomers[0];
     const item1 = createdProducts[0]; // Relay
     const item2 = createdProducts[1]; // Bushing
