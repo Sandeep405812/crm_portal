@@ -1,15 +1,15 @@
-# Mini ERP + CRM Operations Portal
+# CRM Portal - Operations & Client Management System
 
-A complete, production-ready Full Stack ERP & CRM system built for wholesale and distribution businesses.
+A complete, production-ready Full Stack CRM & Inventory Operations portal built for wholesale, distribution, and client management.
 
-Designed with **Node.js (JavaScript)**, **Express.js**, **MySQL (Prisma ORM)**, and **React (Vite) + Tailwind CSS**.
+Designed with **Node.js**, **Express.js**, **MySQL (Prisma ORM)**, and **React (Vite) + Tailwind CSS (Saffron Theme)**.
 
 ---
 
 ## 🚀 Live Demo & Repository
-- **GitHub Repository**: `https://github.com/<your-username>/mini-erp-crm`
-- **Frontend App**: `http://localhost:3000` (or your live deployed Vercel/Render URL)
-- **Backend API**: `http://localhost:5000` (or your live deployed backend URL)
+- **Live Frontend App (Vercel)**: [https://crm-portal-sage-two.vercel.app](https://crm-portal-sage-two.vercel.app)
+- **Live Backend API (Render)**: [https://rm-portal-backend.onrender.com](https://rm-portal-backend.onrender.com)
+- **GitHub Repository**: [https://github.com/Sandeep405812/crm_portal](https://github.com/Sandeep405812/crm_portal)
 
 ---
 
