@@ -35,6 +35,13 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// Database Data Sync Trigger
+app.all('/api/sync-data', async (req, res) => {
+  const syncDefaultData = require('./utils/syncData');
+  const result = await syncDefaultData();
+  res.status(200).json(result);
+});
+
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/customers', customerRoutes);
