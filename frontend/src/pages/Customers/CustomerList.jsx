@@ -418,7 +418,7 @@ export default function CustomerList() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:outline-hidden"
-                    placeholder="e.g. Rajesh Kumar"
+                    placeholder="e.g. Ashu Sharma"
                   />
                 </div>
 
@@ -459,7 +459,7 @@ export default function CustomerList() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:outline-hidden"
-                    placeholder="rajesh@company.com"
+                    placeholder="ashu@company.com"
                   />
                 </div>
 

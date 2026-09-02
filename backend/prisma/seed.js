@@ -15,25 +15,25 @@ async function main() {
 
   const usersData = [
     {
-      name: 'Sandeep Singh (Admin)',
+      name: 'Krishna Sharma (Admin)',
       email: 'admin@erp.com',
       password: adminPasswordHash,
       role: 'ADMIN',
     },
     {
-      name: 'Priya Verma (Sales Exec)',
+      name: 'Rajan Verma (Sales Exec)',
       email: 'sales@erp.com',
       password: salesPasswordHash,
       role: 'SALES',
     },
     {
-      name: 'Vikram Singh (Warehouse Head)',
+      name: 'Gulshan Singh (Warehouse Head)',
       email: 'warehouse@erp.com',
       password: warehousePasswordHash,
       role: 'WAREHOUSE',
     },
     {
-      name: 'Anjali Gupta (Accounts Manager)',
+      name: 'Utkarsh Gupta (Accounts Manager)',
       email: 'accounts@erp.com',
       password: accountsPasswordHash,
       role: 'ACCOUNTS',
@@ -138,9 +138,9 @@ async function main() {
   // 3. Create Sample Customers
   const customersData = [
     {
-      name: 'Rajesh Kumar',
+      name: 'Ashu Sharma',
       mobile: '+91 98112 34567',
-      email: 'rajesh@apexindustrial.in',
+      email: 'ashu@apexindustrial.in',
       businessName: 'Apex Industrial Solutions Pvt Ltd',
       gstNumber: '07AAACA1234F1Z5',
       type: 'DISTRIBUTOR',
@@ -151,9 +151,9 @@ async function main() {
       createdById: createdUsers.SALES.id,
     },
     {
-      name: 'Sunil Mehta',
+      name: 'Gulshan Mehta',
       mobile: '+91 99201 88442',
-      email: 'sunil@mehtatraders.com',
+      email: 'gulshan@mehtatraders.com',
       businessName: 'Mehta Hardware & Electricals',
       gstNumber: '27AABCM9876C1Z2',
       type: 'WHOLESALE',
@@ -164,9 +164,9 @@ async function main() {
       createdById: createdUsers.SALES.id,
     },
     {
-      name: 'Amit Patel',
+      name: 'Utkarsh Patel',
       mobile: '+91 97234 11223',
-      email: 'amit.patel@novatech.co',
+      email: 'utkarsh.patel@novatech.co',
       businessName: 'NovaTech Automation Labs',
       gstNumber: '24AAACN4321D1Z8',
       type: 'RETAIL',
