@@ -15,7 +15,7 @@ async function main() {
 
   const usersData = [
     {
-      name: 'Rohan Sharma (Admin)',
+      name: 'Sandeep Singh (Admin)',
       email: 'admin@erp.com',
       password: adminPasswordHash,
       role: 'ADMIN',
