@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Test / Output files
+*.pdf
+test_*.pdf
+
+# System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
